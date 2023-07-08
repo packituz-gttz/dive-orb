@@ -22,5 +22,6 @@ steps:
       environment:
         DOCKER_IMAGE: << parameters.image >>
         DIVE_CONFIG: << parameters.config >>
+        DOCKER_SOURCE: <<parameters.source >>
       name: "Validate image"
       command: <<include(scripts/check.sh)>>

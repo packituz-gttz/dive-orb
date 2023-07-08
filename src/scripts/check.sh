@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dive "${DOCKER_IMAGE}" --ci-config "${DIVE_CONFIG}"
+dive "{$DOCKER_SOURCE}://${DOCKER_IMAGE}" --ci-config "${DIVE_CONFIG}"
